@@ -6,18 +6,19 @@ scenes.Add(new Scene(@"You decide to take the left path. As you venture deeper, 
 distant growls. Suddenly, you come across a wild animal blocking your way.",2,"scare it", "run around"));
 //fix
 scenes.Add(new Scene(@"You take the right path, hacking your way through the dense foliage. The journey is tough, but you
-eventually stumble upon an ancient temple covered in vines.",4,"enter the temple.", "search around the temple." ));
+eventually stumble upon an ancient temple covered in vines.",4,"enter the temple", "search around the temple" ));
 scenes.Add(new Scene(@"You manage to scare the animal away by making loud noises, and it flees into the jungle. You
 continue down the path and find an old, abandoned campsite with a clue pointing further towards
 the treasure.",10000,"You find the treasure after a few more challenges."," "));
-scenes.Add(new Scene(@"You try to sneak around the animal, but it catches your scent and attacks", 10000,"Your dead", " "));
+scenes.Add(new Scene(@"You try to sneak around the animal, but it catches your scent and attacks", 10000,"Your dead", "No respawn"));
 scenes.Add(new Scene(@"Inside the temple, you find a series of traps and puzzles. You manage to solve them with some
-difficulty, but at the last puzzle, you miscalculate and trigger a trap, sealing the treasure chamber.",1000, "You are trapped forever"," "));
+difficulty, but at the last puzzle, you miscalculate and trigger a trap, sealing the treasure chamber.
+You are trapped forever",1000,"You cant excape" ,">:D"));
 scenes.Add(new Scene(@"While searching around the temple, you find a hidden entrance leading directly to the treasure
 chamber, bypassing all traps. You claim the treasure and escape safely.", 10000, "exit","exit"));
 
 
-int currentScene = -1;
+int currentScene = 0;
 
 
 
